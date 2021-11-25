@@ -294,10 +294,9 @@ section .button button:hover {
   justify-content: space-between;
 }
 .skills-details .boxes .box {
-  width: calc(100% / 2 -20px);
+  width: 150px;
   background-color: white;
   margin: 20px 0;
-  margin: 2px;
   border-radius: 10px;
   border-color: var(--primary-color);
   border-style: solid;
@@ -462,7 +461,7 @@ footer .text span a:hover {
     font-size: 65px;
   }
   .home .text-three {
-    font-size: 35px;
+    font-size: 20px;
   }
   .skills .skills-details {
     align-items: center;
@@ -479,7 +478,7 @@ footer .text span a:hover {
     width: 100%;
   }
   .services .boxes .box {
-    margin: 20px;
+    margin: 40px;
     width: 100%;
   }
   .content .text {
@@ -491,11 +490,14 @@ footer .text span a:hover {
     font-size: 55px;
   }
   .home .text-three {
-    font-size: 33px;
+    font-size: 22px;
   }
   .skills-details .boxes .per {
     font-size: 50px;
     color: var(--primary-color);
+  }
+  .skills-details .boxes .box {
+    margin: 10px;
   }
 }
 .typewriter h1 {
