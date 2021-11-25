@@ -22,25 +22,26 @@ window.onscroll=function(){
 
 let body = document.querySelector("body");
 let navBar = document.querySelector(".navbar");
-let menuBtn=document.querySelector(".menu-btn");
-let cancelBtn=document.querySelector(".cancel-btn");
+let menuBtn = document.querySelector(".menu-btn");
+let cancelBtn = document.querySelector(".cancel-btn");
 
 
-menuBtn.onclick= function(){
+
+menuBtn.onclick = function(){
     navBar.classList.add("active");
     menuBtn.style.opacity="0";
     menuBtn.style.pointerEvents="none";
-    body.style.overflowX="hidden";
+    body.style.overflow="hidden";
     scrollBtn.style.pointerEvents="none";
 }
-
-cancelBtn.onclick= function(){
+cancelBtn.onclick = function(){
     navBar.classList.remove("active");
     menuBtn.style.opacity="1";
     menuBtn.style.pointerEvents="auto";
     body.style.overflowX="auto";
     scrollBtn.style.pointerEvents="auto";
 }
+
 
 //closing
 
@@ -53,4 +54,5 @@ for(var i=0;i<navLinks.length;i++)
     menuBtn.style.pointerEvents="auto";
     })
 }
+
 

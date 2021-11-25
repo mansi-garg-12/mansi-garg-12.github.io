@@ -81,7 +81,7 @@ nav .sticky .menu a {
 nav .sticky .menu a:hover {
   color: var(--black-color);
 }
-.navbar .media-icon a {
+.navbar .media-icons a {
   color: var(--primary-color);
   font-size: 18px;
   margin: 0 6px;
@@ -443,20 +443,21 @@ footer .text span a:hover {
   }
   nav .navbar .menu a {
     font-size: 23px;
-    display: block;
+    /* display: block; */
     color: val(--white-color);
     margin: 10px 0;
   }
   nav .sticy .menu a:hover {
     color: var(--black-color);
   }
-  nav .navbar .media-icon {
-    display: none;
+  nav .navbar .media-icons {
+    display: flex;
+    padding: 40px;
   }
-  nav .menu-btn,
+  /* nav .menu-btn,
   .navbar .menu .cancel-btn {
     display: block;
-  }
+  } */
   .home .text-two {
     font-size: 65px;
   }
@@ -495,5 +496,36 @@ footer .text span a:hover {
   .skills-details .boxes .per {
     font-size: 50px;
     color: var(--primary-color);
+  }
+}
+.typewriter h1 {
+  color: var(--primary-color);
+  font-family: "K2D", sans-serif;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: 0.15em solid rgb(10, 10, 10) block; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  /* letter-spacing: .25em; Adjust as needed */
+  animation: typing 4.5s steps(30, end), blink-caret 0.8s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: rgb(7, 2, 34);
   }
 }
